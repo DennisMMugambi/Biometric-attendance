@@ -1,0 +1,4 @@
+#Wed Feb 02 21:17:19 EAT 2022
+base.0=/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+path.0=classes.dex

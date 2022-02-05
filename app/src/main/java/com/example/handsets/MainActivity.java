@@ -325,6 +325,9 @@ public class MainActivity extends AppCompatActivity {
 		}
 	}
 
-
-
+	//Override function for back navigation
+	@Override
+	public boolean onSupportNavigateUp() {
+		return navController.navigateUp() || super.onSupportNavigateUp();
+	}
 }

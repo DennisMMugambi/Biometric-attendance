@@ -7,6 +7,9 @@
     -->
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- API 14 theme customizations can go here. -->
+        <item name="colorPrimary">@color/design_default_color_primary</item>
+        <item name="colorSecondary">@android:color/holo_purple</item>
+        <item name="android:windowBackground">@android:color/white</item>
     </style>
 
 </resources>

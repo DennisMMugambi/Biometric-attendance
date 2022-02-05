@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
 
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.UI.Home.HomeFragment"
+        android:label="fragment_home2"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_adminFragment"
+            app:destination="@id/adminFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_attendanceHistoryFragment"
+            app:destination="@id/attendanceHistoryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_employeeListFragment"
+            app:destination="@id/employeeListFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_enrollFragment"
+            app:destination="@id/enrollFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminFragment"
+        android:name="com.UI.Admin.AdminFragment"
+        android:label="fragment_admin"
+        tools:layout="@layout/fragment_admin" />
+    <fragment
+        android:id="@+id/attendanceHistoryFragment"
+        android:name="com.UI.AttendanceHistory.AttendanceHistoryFragment"
+        android:label="fragment_attendance_history"
+        tools:layout="@layout/fragment_attendance_history" />
+    <fragment
+        android:id="@+id/employeeListFragment"
+        android:name="com.UI.EmployeeList.EmployeeListFragment"
+        android:label="fragment_employee"
+        tools:layout="@layout/fragment_employee" />
+    <fragment
+        android:id="@+id/enrollFragment"
+        android:name="com.UI.Enroll.EnrollFragment"
+        android:label="fragment_enroll"
+        tools:layout="@layout/fragment_enroll" />
 </navigation>

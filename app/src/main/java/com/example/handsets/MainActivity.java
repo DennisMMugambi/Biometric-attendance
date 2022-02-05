@@ -2,14 +2,18 @@ package com.example.handsets;
 
 import com.Dao.FingerPrintDao;
 import com.Database.FingerPrintsDatabase;
+import com.UI.Home.HomeFragment;
 import com.fgtit.data.wsq;
 import com.fgtit.device.Constants;
 import com.fgtit.device.FPModule;
 import com.fgtit.fpcore.FPMatch;
+import com.google.android.material.snackbar.Snackbar;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.app.ActionBar;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -22,21 +26,31 @@ import android.util.Base64;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.os.Build;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
+import androidx.fragment.app.FragmentManager;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
+import androidx.navigation.ui.NavigationUI;
 import androidx.room.Room;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.zip.Inflater;
 
 import Model.FingerPrint;
 
@@ -63,6 +77,10 @@ public class MainActivity extends AppCompatActivity {
 
 	private Context mContext;
 	FingerPrintsDatabase db;
+	private static final String TAG = "MainActivity.this";
+
+	Toolbar toolbar;
+	NavController navController;
 
 	//dynamic setting of the permission for writing the data into phone memory
 	private int REQUEST_PERMISSION_CODE = 1;
@@ -73,10 +91,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        LinearLayout linearLayout = findViewById(R.id.layout_activity_main);
 
+
+		//Get NavHostFragment and NavController
+		NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
+		if(navHostFragment != null) {
+			navController = navHostFragment.getNavController();
+			toolbar = findViewById(R.id.tool_bar);
+			setSupportActionBar(toolbar);
+			NavigationUI.setupActionBarWithNavController(MainActivity.this, navController);
+		} else {
+			Snackbar.make(linearLayout, "Can't find navHostFragment", Snackbar.LENGTH_LONG).show();
+		}
 
 		//checking the permission
-		if (Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP) {
+		/*if (Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP) {
 			if (ActivityCompat.checkSelfPermission(this, Manifest.permission
 					.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
 				ActivityCompat.requestPermissions(this, PERMISSIONS_STORAGE,
@@ -95,10 +125,10 @@ public class MainActivity extends AppCompatActivity {
 		fpm.InitMatch();
 		fpm.SetContextHandler(this, mHandler);
         fpm.SetTimeOut(Constants.TIMEOUT_LONG);
-        fpm.SetLastCheckLift(true);
+        fpm.SetLastCheckLift(true);*/
     }
 
-	@SuppressLint("HandlerLeak")
+	/*@SuppressLint("HandlerLeak")
 	private Handler mHandler = new Handler(){
 		@Override
 		public void handleMessage(Message msg){
@@ -176,24 +206,25 @@ public class MainActivity extends AppCompatActivity {
 					break;
 			}
 		}
-	};
+	};*/
 
     private void displayToast(){
 		//List<FingerPrint> storedFingerPrints = getFingerPrint();
     	Toast.makeText(mContext, "Toast is working", Toast.LENGTH_LONG).show();
 	}
     
-	@Override
+	/*@Override
 	protected void onDestroy(){
 		super.onDestroy();
-	}
-	
-    @Override
+	}*/
+
+
+	/*@Override
 	protected void onResume() {
 		super.onResume();
 		fpm.ResumeRegister();
 		fpm.OpenDevice();
-    }
+    }*/
 
     private void insertFingerPrint( byte[] sampleRefData){
 
@@ -217,12 +248,12 @@ public class MainActivity extends AppCompatActivity {
 	}
 	*/
 
-	@Override
+	/*@Override
 	protected void onStop() {		
 		super.onStop();
 		fpm.PauseUnRegister();
 		fpm.CloseDevice();
-	}
+	}*/
 
 	private void initView(){
 
@@ -230,15 +261,15 @@ public class MainActivity extends AppCompatActivity {
 		db = Room.databaseBuilder(getApplicationContext(), FingerPrintsDatabase.class,
 				"fingerprints_db").allowMainThreadQueries().build();
 		mContext = getApplicationContext();
-		
-		tvDevStatu=(TextView)findViewById(R.id.textView1);
-		tvFpStatu=(TextView)findViewById(R.id.textView2);
-		ivFpImage=(ImageView)findViewById(R.id.imageView1);
-		
-		final Button btn_enrol=(Button)findViewById(R.id.button1);
-		final Button btn_capture=(Button)findViewById(R.id.button2);
 
-		btn_enrol.setOnClickListener(new View.OnClickListener(){
+		//tvDevStatu=(TextView)findViewById(R.id.textView1);
+		//tvFpStatu=(TextView)findViewById(R.id.textView2);
+		//ivFpImage=(ImageView)findViewById(R.id.imageView1);
+		
+		//final Button btn_enrol=(Button)findViewById(R.id.button1);
+		//final Button btn_capture=(Button)findViewById(R.id.button2);
+
+		/*btn_enrol.setOnClickListener(new View.OnClickListener(){
 			@Override
 			public void onClick(View v) {
 				if(fpm.GenerateTemplate(2)){
@@ -258,9 +289,42 @@ public class MainActivity extends AppCompatActivity {
 					Toast.makeText(MainActivity.this, "Busy", Toast.LENGTH_SHORT).show();
 				}
 			}
-		});
+		});*/
 
 	}
+
+	//Get menu for appbar
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.main, menu);
+		return true;
+	}
+
+	//standard function to set actions for different menu items
+	@Override
+	public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+		View v;
+		switch (item.getItemId()) {
+			case R.id.action_settings:
+				//Do nothing for now
+
+				return true;
+			case R.id.action_history:
+				//v = findViewById(R.id.action_history);
+				//Navigation.findNavController(v).navigate(R.id.attendanceHistoryFragment);
+				navController.navigate(R.id.attendanceHistoryFragment);
+				return true;
+			case R.id.action_admin:
+				//v = findViewById(R.id.action_admin);
+				//Navigation.findNavController(v).navigate(R.id.adminFragment);
+				navController.navigate(R.id.adminFragment);
+				return true;
+			default:
+				return super.onOptionsItemSelected(item);
+		}
+	}
+
 
 
 }

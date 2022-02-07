@@ -6,8 +6,10 @@
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_list.xml" value="0.16875" />
         <entry key="app/src/main/res/drawable/ic_person.xml" value="0.16875" />
+        <entry key="app/src/main/res/layout/activity_enroll.xml" value="0.11594202898550725" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.13903985507246377" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1381340579710145" />
+        <entry key="app/src/main/res/layout/enroll_fingerprint_layout.xml" value="0.13360507246376813" />
         <entry key="app/src/main/res/layout/fragment_admin.xml" value="0.1381340579710145" />
         <entry key="app/src/main/res/layout/fragment_attendance_history.xml" value="0.1381340579710145" />
         <entry key="app/src/main/res/layout/fragment_employee.xml" value="0.1381340579710145" />

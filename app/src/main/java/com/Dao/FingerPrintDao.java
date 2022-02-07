@@ -6,20 +6,18 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.Database.FingerPrintsDatabase;
-
 import java.util.List;
 
-import Model.FingerPrint;
+import Model.Employee;
 
 @Dao
 public interface FingerPrintDao {
-    @Query("Select * from FingerPrint")
-    List<FingerPrint> getFingerPrintList();
+    @Query("Select * from Employee")
+    List<Employee> getEmployeeList();
     @Insert
-    void insertFingerPrint(FingerPrint fingerPrint);
+    void insertEmployee(Employee employee);
     @Update
-    void updateFingerPrint(FingerPrint fingerPrint);
+    void updateEmployee(Employee employee);
     @Delete
-    void deleteFingerPrint(FingerPrint fingerPrint);
+    void deleteEmployee(Employee employee);
 }

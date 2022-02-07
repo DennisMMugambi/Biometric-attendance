@@ -1,6 +1,6 @@
 package com.Dao;
 
-import Model.FingerPrint;
+import Model.Employee;
 import android.database.Cursor;
 import androidx.room.EntityDeletionOrUpdateAdapter;
 import androidx.room.EntityInsertionAdapter;
@@ -17,65 +17,87 @@ import java.util.List;
 public final class FingerPrintDao_Impl implements FingerPrintDao {
   private final RoomDatabase __db;
 
-  private final EntityInsertionAdapter __insertionAdapterOfFingerPrint;
+  private final EntityInsertionAdapter __insertionAdapterOfEmployee;
 
-  private final EntityDeletionOrUpdateAdapter __deletionAdapterOfFingerPrint;
+  private final EntityDeletionOrUpdateAdapter __deletionAdapterOfEmployee;
 
-  private final EntityDeletionOrUpdateAdapter __updateAdapterOfFingerPrint;
+  private final EntityDeletionOrUpdateAdapter __updateAdapterOfEmployee;
 
   public FingerPrintDao_Impl(RoomDatabase __db) {
     this.__db = __db;
-    this.__insertionAdapterOfFingerPrint = new EntityInsertionAdapter<FingerPrint>(__db) {
+    this.__insertionAdapterOfEmployee = new EntityInsertionAdapter<Employee>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR ABORT INTO `FingerPrint`(`id`,`fingerprints`) VALUES (nullif(?, 0),?)";
+        return "INSERT OR ABORT INTO `Employee`(`id`,`fingerprints`,`Name`,`Age`,`jobTitle`) VALUES (nullif(?, 0),?,?,?,?)";
       }
 
       @Override
-      public void bind(SupportSQLiteStatement stmt, FingerPrint value) {
+      public void bind(SupportSQLiteStatement stmt, Employee value) {
         stmt.bindLong(1, value.getId());
-        if (value.getRefdata() == null) {
+        if (value.getFingerprints() == null) {
           stmt.bindNull(2);
         } else {
-          stmt.bindBlob(2, value.getRefdata());
+          stmt.bindBlob(2, value.getFingerprints());
+        }
+        if (value.getEmployeeName() == null) {
+          stmt.bindNull(3);
+        } else {
+          stmt.bindString(3, value.getEmployeeName());
+        }
+        stmt.bindLong(4, value.getAge());
+        if (value.getJobTitle() == null) {
+          stmt.bindNull(5);
+        } else {
+          stmt.bindString(5, value.getJobTitle());
         }
       }
     };
-    this.__deletionAdapterOfFingerPrint = new EntityDeletionOrUpdateAdapter<FingerPrint>(__db) {
+    this.__deletionAdapterOfEmployee = new EntityDeletionOrUpdateAdapter<Employee>(__db) {
       @Override
       public String createQuery() {
-        return "DELETE FROM `FingerPrint` WHERE `id` = ?";
+        return "DELETE FROM `Employee` WHERE `id` = ?";
       }
 
       @Override
-      public void bind(SupportSQLiteStatement stmt, FingerPrint value) {
+      public void bind(SupportSQLiteStatement stmt, Employee value) {
         stmt.bindLong(1, value.getId());
       }
     };
-    this.__updateAdapterOfFingerPrint = new EntityDeletionOrUpdateAdapter<FingerPrint>(__db) {
+    this.__updateAdapterOfEmployee = new EntityDeletionOrUpdateAdapter<Employee>(__db) {
       @Override
       public String createQuery() {
-        return "UPDATE OR ABORT `FingerPrint` SET `id` = ?,`fingerprints` = ? WHERE `id` = ?";
+        return "UPDATE OR ABORT `Employee` SET `id` = ?,`fingerprints` = ?,`Name` = ?,`Age` = ?,`jobTitle` = ? WHERE `id` = ?";
       }
 
       @Override
-      public void bind(SupportSQLiteStatement stmt, FingerPrint value) {
+      public void bind(SupportSQLiteStatement stmt, Employee value) {
         stmt.bindLong(1, value.getId());
-        if (value.getRefdata() == null) {
+        if (value.getFingerprints() == null) {
           stmt.bindNull(2);
         } else {
-          stmt.bindBlob(2, value.getRefdata());
+          stmt.bindBlob(2, value.getFingerprints());
         }
-        stmt.bindLong(3, value.getId());
+        if (value.getEmployeeName() == null) {
+          stmt.bindNull(3);
+        } else {
+          stmt.bindString(3, value.getEmployeeName());
+        }
+        stmt.bindLong(4, value.getAge());
+        if (value.getJobTitle() == null) {
+          stmt.bindNull(5);
+        } else {
+          stmt.bindString(5, value.getJobTitle());
+        }
+        stmt.bindLong(6, value.getId());
       }
     };
   }
 
   @Override
-  public void insertFingerPrint(FingerPrint fingerPrint) {
+  public void insertEmployee(Employee employee) {
     __db.beginTransaction();
     try {
-      __insertionAdapterOfFingerPrint.insert(fingerPrint);
+      __insertionAdapterOfEmployee.insert(employee);
       __db.setTransactionSuccessful();
     } finally {
       __db.endTransaction();
@@ -83,10 +105,10 @@ public final class FingerPrintDao_Impl implements FingerPrintDao {
   }
 
   @Override
-  public void deleteFingerPrint(FingerPrint fingerPrint) {
+  public void deleteEmployee(Employee employee) {
     __db.beginTransaction();
     try {
-      __deletionAdapterOfFingerPrint.handle(fingerPrint);
+      __deletionAdapterOfEmployee.handle(employee);
       __db.setTransactionSuccessful();
     } finally {
       __db.endTransaction();
@@ -94,10 +116,10 @@ public final class FingerPrintDao_Impl implements FingerPrintDao {
   }
 
   @Override
-  public void updateFingerPrint(FingerPrint fingerPrint) {
+  public void updateEmployee(Employee employee) {
     __db.beginTransaction();
     try {
-      __updateAdapterOfFingerPrint.handle(fingerPrint);
+      __updateAdapterOfEmployee.handle(employee);
       __db.setTransactionSuccessful();
     } finally {
       __db.endTransaction();
@@ -105,21 +127,30 @@ public final class FingerPrintDao_Impl implements FingerPrintDao {
   }
 
   @Override
-  public List<FingerPrint> getFingerPrintList() {
-    final String _sql = "Select * from FingerPrint";
+  public List<Employee> getEmployeeList() {
+    final String _sql = "Select * from Employee";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
     final Cursor _cursor = __db.query(_statement);
     try {
       final int _cursorIndexOfId = _cursor.getColumnIndexOrThrow("id");
-      final int _cursorIndexOfRefdata = _cursor.getColumnIndexOrThrow("fingerprints");
-      final List<FingerPrint> _result = new ArrayList<FingerPrint>(_cursor.getCount());
+      final int _cursorIndexOfFingerprints = _cursor.getColumnIndexOrThrow("fingerprints");
+      final int _cursorIndexOfEmployeeName = _cursor.getColumnIndexOrThrow("Name");
+      final int _cursorIndexOfAge = _cursor.getColumnIndexOrThrow("Age");
+      final int _cursorIndexOfJobTitle = _cursor.getColumnIndexOrThrow("jobTitle");
+      final List<Employee> _result = new ArrayList<Employee>(_cursor.getCount());
       while(_cursor.moveToNext()) {
-        final FingerPrint _item;
+        final Employee _item;
         final int _tmpId;
         _tmpId = _cursor.getInt(_cursorIndexOfId);
-        final byte[] _tmpRefdata;
-        _tmpRefdata = _cursor.getBlob(_cursorIndexOfRefdata);
-        _item = new FingerPrint(_tmpId,_tmpRefdata);
+        final byte[] _tmpFingerprints;
+        _tmpFingerprints = _cursor.getBlob(_cursorIndexOfFingerprints);
+        final String _tmpEmployeeName;
+        _tmpEmployeeName = _cursor.getString(_cursorIndexOfEmployeeName);
+        final int _tmpAge;
+        _tmpAge = _cursor.getInt(_cursorIndexOfAge);
+        final String _tmpJobTitle;
+        _tmpJobTitle = _cursor.getString(_cursorIndexOfJobTitle);
+        _item = new Employee(_tmpId,_tmpFingerprints,_tmpEmployeeName,_tmpAge,_tmpJobTitle);
         _result.add(_item);
       }
       return _result;

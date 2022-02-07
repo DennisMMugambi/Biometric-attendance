@@ -20,8 +20,8 @@
             android:id="@+id/action_homeFragment_to_employeeListFragment"
             app:destination="@id/employeeListFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_enrollFragment"
-            app:destination="@id/enrollFragment" />
+            android:id="@+id/action_homeFragment_to_enrollActivity"
+            app:destination="@id/enrollActivity" />
     </fragment>
     <fragment
         android:id="@+id/adminFragment"
@@ -38,9 +38,9 @@
         android:name="com.UI.EmployeeList.EmployeeListFragment"
         android:label="fragment_employee"
         tools:layout="@layout/fragment_employee" />
-    <fragment
-        android:id="@+id/enrollFragment"
-        android:name="com.UI.Enroll.EnrollFragment"
-        android:label="fragment_enroll"
-        tools:layout="@layout/fragment_enroll" />
+    <activity
+        android:id="@+id/enrollActivity"
+        android:name="com.UI.Enroll.EnrollActivity"
+        android:label="activity_enroll"
+        tools:layout="@layout/activity_enroll" />
 </navigation>

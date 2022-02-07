@@ -1658,6 +1658,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_fingerprint
 drawable ic_launcher_background
 drawable ic_list
 drawable ic_mtrl_checked_circle
@@ -1764,7 +1765,7 @@ id action_history
 id action_homeFragment_to_adminFragment
 id action_homeFragment_to_attendanceHistoryFragment
 id action_homeFragment_to_employeeListFragment
-id action_homeFragment_to_enrollFragment
+id action_homeFragment_to_enrollActivity
 id action_image
 id action_menu_divider
 id action_menu_presenter
@@ -1804,6 +1805,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id button1
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -1879,7 +1881,8 @@ id employeeListFragment
 id end
 id end_padder
 id enroll
-id enrollFragment
+id enrollActivity
+id enroll_instruction
 id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
@@ -1890,6 +1893,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id fingerprint_image
 id fitToContents
 id fixed
 id flip
@@ -1917,6 +1921,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView1
 id immediateStop
 id included
 id info
@@ -2098,6 +2103,8 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView1
+id textView2
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -2203,6 +2210,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_enroll
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2220,10 +2228,10 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout enroll_fingerprint_layout
 layout fragment_admin
 layout fragment_attendance_history
 layout fragment_employee
-layout fragment_enroll
 layout fragment_home
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
@@ -2386,6 +2394,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string place_finger
 string search_menu_title
 string sign_in
 string sign_out

@@ -27,17 +27,17 @@ public final class FingerPrintsDatabase_Impl extends FingerPrintsDatabase {
 
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(4) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(5) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `FingerPrint` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `fingerprints` BLOB)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `Employee` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `fingerprints` BLOB, `Name` TEXT, `Age` INTEGER NOT NULL, `jobTitle` TEXT)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"62c768b70e8837d731f6c3cf65ade786\")");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"d7949c273e4a328b9cc6f7901122846f\")");
       }
 
       @Override
       public void dropAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("DROP TABLE IF EXISTS `FingerPrint`");
+        _db.execSQL("DROP TABLE IF EXISTS `Employee`");
       }
 
       @Override
@@ -62,20 +62,23 @@ public final class FingerPrintsDatabase_Impl extends FingerPrintsDatabase {
 
       @Override
       protected void validateMigration(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsFingerPrint = new HashMap<String, TableInfo.Column>(2);
-        _columnsFingerPrint.put("id", new TableInfo.Column("id", "INTEGER", true, 1));
-        _columnsFingerPrint.put("fingerprints", new TableInfo.Column("fingerprints", "BLOB", false, 0));
-        final HashSet<TableInfo.ForeignKey> _foreignKeysFingerPrint = new HashSet<TableInfo.ForeignKey>(0);
-        final HashSet<TableInfo.Index> _indicesFingerPrint = new HashSet<TableInfo.Index>(0);
-        final TableInfo _infoFingerPrint = new TableInfo("FingerPrint", _columnsFingerPrint, _foreignKeysFingerPrint, _indicesFingerPrint);
-        final TableInfo _existingFingerPrint = TableInfo.read(_db, "FingerPrint");
-        if (! _infoFingerPrint.equals(_existingFingerPrint)) {
-          throw new IllegalStateException("Migration didn't properly handle FingerPrint(Model.FingerPrint).\n"
-                  + " Expected:\n" + _infoFingerPrint + "\n"
-                  + " Found:\n" + _existingFingerPrint);
+        final HashMap<String, TableInfo.Column> _columnsEmployee = new HashMap<String, TableInfo.Column>(5);
+        _columnsEmployee.put("id", new TableInfo.Column("id", "INTEGER", true, 1));
+        _columnsEmployee.put("fingerprints", new TableInfo.Column("fingerprints", "BLOB", false, 0));
+        _columnsEmployee.put("Name", new TableInfo.Column("Name", "TEXT", false, 0));
+        _columnsEmployee.put("Age", new TableInfo.Column("Age", "INTEGER", true, 0));
+        _columnsEmployee.put("jobTitle", new TableInfo.Column("jobTitle", "TEXT", false, 0));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysEmployee = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesEmployee = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoEmployee = new TableInfo("Employee", _columnsEmployee, _foreignKeysEmployee, _indicesEmployee);
+        final TableInfo _existingEmployee = TableInfo.read(_db, "Employee");
+        if (! _infoEmployee.equals(_existingEmployee)) {
+          throw new IllegalStateException("Migration didn't properly handle Employee(Model.Employee).\n"
+                  + " Expected:\n" + _infoEmployee + "\n"
+                  + " Found:\n" + _existingEmployee);
         }
       }
-    }, "62c768b70e8837d731f6c3cf65ade786", "7036ae82b1d31a50050ccf19b34b0575");
+    }, "d7949c273e4a328b9cc6f7901122846f", "28c9ef163ef0f8ab212b9055227cb6e2");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)
@@ -86,7 +89,7 @@ public final class FingerPrintsDatabase_Impl extends FingerPrintsDatabase {
 
   @Override
   protected InvalidationTracker createInvalidationTracker() {
-    return new InvalidationTracker(this, "FingerPrint");
+    return new InvalidationTracker(this, "Employee");
   }
 
   @Override
@@ -95,7 +98,7 @@ public final class FingerPrintsDatabase_Impl extends FingerPrintsDatabase {
     final SupportSQLiteDatabase _db = super.getOpenHelper().getWritableDatabase();
     try {
       super.beginTransaction();
-      _db.execSQL("DELETE FROM `FingerPrint`");
+      _db.execSQL("DELETE FROM `Employee`");
       super.setTransactionSuccessful();
     } finally {
       super.endTransaction();

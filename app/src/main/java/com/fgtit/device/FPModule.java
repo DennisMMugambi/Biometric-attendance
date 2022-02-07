@@ -456,7 +456,7 @@ public class FPModule {
 
     public void PauseUnRegister() {
         if (mUsbReceiver != null) {
-            pContext.unregisterReceiver(mUsbReceiver);
+           // pContext.unregisterReceiver(mUsbReceiver);
         }
     }
 

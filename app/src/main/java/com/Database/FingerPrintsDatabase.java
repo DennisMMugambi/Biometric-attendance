@@ -9,9 +9,9 @@ import androidx.room.RoomDatabase;
 
 import com.Dao.FingerPrintDao;
 
-import Model.FingerPrint;
+import Model.Employee;
 
-@Database(entities = {FingerPrint.class}, exportSchema = false, version = 4)
+@Database(entities = {Employee.class}, exportSchema = false, version = 5)
 public abstract class FingerPrintsDatabase extends RoomDatabase {
     private static final String DB_NAME = "fingerprints_db";
     private static FingerPrintsDatabase instance;

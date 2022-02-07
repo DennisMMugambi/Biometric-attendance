@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -17,13 +18,15 @@ import androidx.navigation.Navigation;
 
 import com.UI.Admin.AdminFragment;
 import com.UI.AttendanceHistory.AttendanceHistoryFragment;
-import com.UI.Enroll.EnrollFragment;
 import com.example.handsets.R;
+import com.fgtit.device.FPModule;
 
 public class HomeFragment extends Fragment {
     View root;
     private Button mSignIn, mSignOut, mEnroll;
     private Context mContext;
+    private FPModule fpm=new FPModule();
+    private int worktype=0;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -43,7 +46,7 @@ public class HomeFragment extends Fragment {
         mEnroll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              Navigation.findNavController(v).navigate(R.id.enrollFragment);
+              Navigation.findNavController(v).navigate(R.id.enrollActivity);
             }
         });
     }

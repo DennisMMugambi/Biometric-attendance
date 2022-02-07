@@ -8,6 +8,10 @@
         "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/layout/fragment_home.xml"
     },
     {
+        "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/drawable_ic_fingerprint.xml.flat",
+        "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/drawable/ic_fingerprint.xml"
+    },
+    {
         "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/layout_fragment_attendance_history.xml.flat",
         "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/layout/fragment_attendance_history.xml"
     },
@@ -44,12 +48,12 @@
         "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
-    },
-    {
         "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
         "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
         "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -80,6 +84,14 @@
         "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
     },
     {
+        "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/layout_enroll_fingerprint_layout.xml.flat",
+        "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/layout/enroll_fingerprint_layout.xml"
+    },
+    {
+        "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/layout_activity_enroll.xml.flat",
+        "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/layout/activity_enroll.xml"
+    },
+    {
         "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
@@ -106,9 +118,5 @@
     {
         "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/drawable_ic_person.xml.flat",
         "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/drawable/ic_person.xml"
-    },
-    {
-        "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/layout_fragment_enroll.xml.flat",
-        "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/layout/fragment_enroll.xml"
     }
 ]

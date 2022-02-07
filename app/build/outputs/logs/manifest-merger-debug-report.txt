@@ -1,8 +1,8 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:1-36:12
-INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:1-36:12
-INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:1-36:12
+ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:1-40:12
 MERGED from [androidx.navigation:navigation-fragment:2.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/c5b8acbb45739ad3e9aab49a3442ff87/navigation-fragment-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-ui:2.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/f2e70f4ea04dd4c6008607fc218b389e/navigation-ui-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.2.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/d1c39c6ed21ce1e3b84135603c28ee8c/material-1.2.0/AndroidManifest.xml:17:1-24:12
@@ -49,19 +49,19 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/dennis/.gradle/c
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0-beta01] /home/dennis/.gradle/caches/transforms-2/files-2.1/f14bc878fab65e91e0988f1bd1aef410/lifecycle-livedata-core-2.2.0-beta01/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/72071604f8ac2b2678fe1ed7166cfc97/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/207acddd302c825de4cf6baf4fa19438/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:1-36:12
-INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:1-40:12
 	package
 		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:5:5-35
 		INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml
 		INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml
 	xmlns:app
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:4:5-56
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:3:5-56
 	xmlns:tools
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:3:5-51
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:4:5-51
 	android:versionCode
 		INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:1-36:12
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:1-40:12
 		INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:11-69
@@ -84,13 +84,13 @@ ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifes
 	android:name
 		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:13:22-72
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
-ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:14:5-15:47
+ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:14:5-16:47
 	tools:ignore
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:15:9-44
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:16:9-44
 	android:name
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:14:22-81
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:15:9-68
 application
-ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:17:5-34:19
+ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:18:5-38:19
 MERGED from [com.google.android.material:material:1.2.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/d1c39c6ed21ce1e3b84135603c28ee8c/material-1.2.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.2.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/d1c39c6ed21ce1e3b84135603c28ee8c/material-1.2.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /home/dennis/.gradle/caches/transforms-2/files-2.1/46d0c12706a96a0aca7862b8af86c9b9/constraintlayout-2.1.3/AndroidManifest.xml:9:5-20
@@ -104,35 +104,41 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/denni
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.2] /home/dennis/.gradle/caches/transforms-2/files-2.1/8daa5a168526d6c89afec07423d6eb48/core-1.3.2/AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:20:9-41
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:21:9-41
 	android:icon
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:19:9-41
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:20:9-41
 	android:allowBackup
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:18:9-35
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:19:9-35
 	android:theme
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:21:9-40
-activity#com.example.handsets.MainActivity
-ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:22:9-33:20
-	android:screenOrientation
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:25:13-50
-	android:label
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:24:13-45
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:22:9-40
+activity#com.UI.Enroll.EnrollActivity
+ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:23:9-25:40
 	android:exported
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:26:13-36
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:24:13-56
+activity#com.example.handsets.MainActivity
+ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:26:9-37:20
+	android:screenOrientation
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:30:13-50
+	android:label
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:29:13-45
+	android:exported
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:28:13-36
 	android:theme
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:27:13-69
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:31:13-69
 	android:name
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:23:13-41
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:27:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:28:13-32:29
+ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:32:13-36:29
 action#android.intent.action.MAIN
-ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:29:17-69
+ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:33:17-69
 	android:name
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:29:25-66
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:33:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:31:17-77
+ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:35:17-77
 	android:name
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:31:27-74
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:35:27-74
 uses-sdk
 INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml

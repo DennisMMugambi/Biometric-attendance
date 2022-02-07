@@ -44,13 +44,25 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="enrollActivity">
+                  <entry key="enrollFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-232" />
-                            <option name="y" value="369" />
+                            <option name="x" value="-238" />
+                            <option name="y" value="368" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="enrollmentDetailsFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-516" />
+                            <option name="y" value="370" />
                           </Point>
                         </option>
                       </LayoutPositions>

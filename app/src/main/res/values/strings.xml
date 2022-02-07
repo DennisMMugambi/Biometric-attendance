@@ -19,4 +19,19 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="action_history">Attendance History</string>
     <string name="place_finger">place finger</string>
+    <string name="first_name">Enter First Name</string>
+    <string name="second_name">Enter second name</string>
+    <string name="enter_age">Enter age</string>
+    <string name="job_position">Enter Job Position</string>
+    <string name="enter_id">Enter personal identification number</string>
+    <string name="save">Save</string>
+    <string name="right_thumb">Place right thumb</string>
+    <string name="right_index">Place right index</string>
+    <string name="left_thumb">Place left thumb</string>
+    <string name="left_index">Place left index</string>
+    <string name="name_empty">first name cannot be empty</string>
+    <string name="second_name_empty">second name cannot be empty</string>
+    <string name="age_empty">age cannot be empty</string>
+    <string name="position_empty">job position cannot be empty</string>
+    <string name="id_empty">id cannot be empty</string>
 </resources>

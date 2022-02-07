@@ -11,29 +11,45 @@ import androidx.room.PrimaryKey;
 public class Employee {
     @PrimaryKey(autoGenerate = true)
     private int id;
-    @ColumnInfo(name = "fingerprints")
-    private byte[] fingerprints;
+    @ColumnInfo(name = "rightThumb")
+    private byte[] rightThumb;
+    @ColumnInfo(name = "rightIndex")
+    private byte[] rightIndex;
+    @ColumnInfo(name = "leftThumb")
+    private byte[] leftThumb;
+    @ColumnInfo(name = "leftIndex")
+    private byte[] leftIndex;
     @ColumnInfo(name = "Name")
     private String employeeName;
     @ColumnInfo(name = "Age")
     private int age;
     @ColumnInfo(name = "jobTitle")
     private String jobTitle;
+    @ColumnInfo(name = "identification")
+    private String identification;
 
-    public Employee(int id, byte[] fingerprints, String employeeName, int age, String jobTitle) {
+    public Employee(int id, byte[] rightThumb, byte[] rightIndex, byte[] leftThumb, byte[] leftIndex, String employeeName, int age, String jobTitle, String identification) {
         this.id = id;
-        this.fingerprints = fingerprints;
+        this.rightThumb = rightThumb;
+        this.rightIndex = rightIndex;
+        this.leftThumb = leftThumb;
+        this.leftIndex = leftIndex;
         this.employeeName = employeeName;
         this.age = age;
         this.jobTitle = jobTitle;
+        this.identification = identification;
     }
 
     @Ignore
-    public Employee(byte[] fingerprints, String employeeName, int age, String jobTitle) {
-        this.fingerprints = fingerprints;
+    public Employee(byte[] rightThumb, byte[] rightIndex, byte[] leftThumb, byte[] leftIndex, String employeeName, int age, String jobTitle, String identification) {
+        this.rightThumb = rightThumb;
+        this.rightIndex = rightIndex;
+        this.leftThumb = leftThumb;
+        this.leftIndex = leftIndex;
         this.employeeName = employeeName;
         this.age = age;
         this.jobTitle = jobTitle;
+        this.identification = identification;
     }
 
     public int getId() {
@@ -44,12 +60,36 @@ public class Employee {
         this.id = id;
     }
 
-    public byte[] getFingerprints() {
-        return fingerprints;
+    public byte[] getRightThumb() {
+        return rightThumb;
     }
 
-    public void setFingerprints(byte[] fingerprints) {
-        this.fingerprints = fingerprints;
+    public void setRightThumb(byte[] rightThumb) {
+        this.rightThumb = rightThumb;
+    }
+
+    public byte[] getRightIndex() {
+        return rightIndex;
+    }
+
+    public void setRightIndex(byte[] rightIndex) {
+        this.rightIndex = rightIndex;
+    }
+
+    public byte[] getLeftThumb() {
+        return leftThumb;
+    }
+
+    public void setLeftThumb(byte[] leftThumb) {
+        this.leftThumb = leftThumb;
+    }
+
+    public byte[] getLeftIndex() {
+        return leftIndex;
+    }
+
+    public void setLeftIndex(byte[] leftIndex) {
+        this.leftIndex = leftIndex;
     }
 
     public String getEmployeeName() {
@@ -74,5 +114,13 @@ public class Employee {
 
     public void setJobTitle(String jobTitle) {
         this.jobTitle = jobTitle;
+    }
+
+    public String getIdentification() {
+        return identification;
+    }
+
+    public void setIdentification(String identification) {
+        this.identification = identification;
     }
 }

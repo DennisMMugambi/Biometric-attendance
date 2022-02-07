@@ -8,6 +8,10 @@
         "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/layout/fragment_home.xml"
     },
     {
+        "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/layout_fragment_enrollment_details.xml.flat",
+        "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/layout/fragment_enrollment_details.xml"
+    },
+    {
         "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/drawable_ic_fingerprint.xml.flat",
         "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/drawable/ic_fingerprint.xml"
     },
@@ -84,10 +88,6 @@
         "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/layout_enroll_fingerprint_layout.xml.flat",
-        "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/layout/enroll_fingerprint_layout.xml"
-    },
-    {
         "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/layout_activity_enroll.xml.flat",
         "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/layout/activity_enroll.xml"
     },
@@ -118,5 +118,9 @@
     {
         "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/drawable_ic_person.xml.flat",
         "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/drawable/ic_person.xml"
+    },
+    {
+        "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/layout_fragment_enroll.xml.flat",
+        "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/layout/fragment_enroll.xml"
     }
 ]

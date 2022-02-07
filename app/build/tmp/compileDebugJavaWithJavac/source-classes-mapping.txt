@@ -2,6 +2,8 @@ com/fgtit/data/ConversionsEx.java
  com.fgtit.data.ConversionsEx
 com/fgtit/device/Constants.java
  com.fgtit.device.Constants
+com/UI/EnrollmentDetails/EnrollmentDetailsViewModel.java
+ com.UI.EnrollmentDetails.EnrollmentDetailsViewModel
 com/UI/Home/HomeViewModel.java
  com.UI.Home.HomeViewModel
 com/fgtit/data/Conversions.java
@@ -42,10 +44,6 @@ com/UI/EmployeeList/EmployeeListViewModel.java
  com.UI.EmployeeList.EmployeeListViewModel
 com/UI/Enroll/EnrollViewModel.java
  com.UI.Enroll.EnrollViewModel
-com/UI/Enroll/EnrollActivity.java
- com.UI.Enroll.EnrollActivity
- com.UI.Enroll.EnrollActivity$1
- com.UI.Enroll.EnrollActivity$2
 com/UI/AttendanceHistory/AttendanceViewModel.java
  com.UI.AttendanceHistory.AttendanceViewModel
 android_serialport_api/SerialPort.java
@@ -74,6 +72,10 @@ com/fgtit/device/SerialModule.java
  com.fgtit.device.SerialModule$OnUpImageListener
  com.fgtit.device.SerialModule$ReadThread
  com.fgtit.device.SerialModule$WorkerHandler
+com/UI/Enroll/EnrollFragment.java
+ com.UI.Enroll.EnrollFragment
+ com.UI.Enroll.EnrollFragment$1
+ com.UI.Enroll.EnrollFragment$2
 com/fgtit/device/FPModule.java
  com.fgtit.device.FPModule
  com.fgtit.device.FPModule$1
@@ -91,6 +93,9 @@ com/UI/EmployeeList/EmployeeListFragment.java
  com.UI.EmployeeList.EmployeeListFragment
 com/UI/Admin/AdminViewModel.java
  com.UI.Admin.AdminViewModel
+com/UI/EnrollmentDetails/EnrollmentDetailsFragment.java
+ com.UI.EnrollmentDetails.EnrollmentDetailsFragment
+ com.UI.EnrollmentDetails.EnrollmentDetailsFragment$1
 com/UI/Admin/AdminFragment.java
  com.UI.Admin.AdminFragment
 com/fgtit/data/wsq.java

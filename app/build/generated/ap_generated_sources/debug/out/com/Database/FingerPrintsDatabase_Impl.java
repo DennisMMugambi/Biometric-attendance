@@ -30,9 +30,9 @@ public final class FingerPrintsDatabase_Impl extends FingerPrintsDatabase {
     final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(5) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `Employee` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `fingerprints` BLOB, `Name` TEXT, `Age` INTEGER NOT NULL, `jobTitle` TEXT)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `Employee` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `rightThumb` BLOB, `rightIndex` BLOB, `leftThumb` BLOB, `leftIndex` BLOB, `Name` TEXT, `Age` INTEGER NOT NULL, `jobTitle` TEXT, `identification` TEXT)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"d7949c273e4a328b9cc6f7901122846f\")");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"37aee363a338a3e709ad259443e3bb30\")");
       }
 
       @Override
@@ -62,12 +62,16 @@ public final class FingerPrintsDatabase_Impl extends FingerPrintsDatabase {
 
       @Override
       protected void validateMigration(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsEmployee = new HashMap<String, TableInfo.Column>(5);
+        final HashMap<String, TableInfo.Column> _columnsEmployee = new HashMap<String, TableInfo.Column>(9);
         _columnsEmployee.put("id", new TableInfo.Column("id", "INTEGER", true, 1));
-        _columnsEmployee.put("fingerprints", new TableInfo.Column("fingerprints", "BLOB", false, 0));
+        _columnsEmployee.put("rightThumb", new TableInfo.Column("rightThumb", "BLOB", false, 0));
+        _columnsEmployee.put("rightIndex", new TableInfo.Column("rightIndex", "BLOB", false, 0));
+        _columnsEmployee.put("leftThumb", new TableInfo.Column("leftThumb", "BLOB", false, 0));
+        _columnsEmployee.put("leftIndex", new TableInfo.Column("leftIndex", "BLOB", false, 0));
         _columnsEmployee.put("Name", new TableInfo.Column("Name", "TEXT", false, 0));
         _columnsEmployee.put("Age", new TableInfo.Column("Age", "INTEGER", true, 0));
         _columnsEmployee.put("jobTitle", new TableInfo.Column("jobTitle", "TEXT", false, 0));
+        _columnsEmployee.put("identification", new TableInfo.Column("identification", "TEXT", false, 0));
         final HashSet<TableInfo.ForeignKey> _foreignKeysEmployee = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesEmployee = new HashSet<TableInfo.Index>(0);
         final TableInfo _infoEmployee = new TableInfo("Employee", _columnsEmployee, _foreignKeysEmployee, _indicesEmployee);
@@ -78,7 +82,7 @@ public final class FingerPrintsDatabase_Impl extends FingerPrintsDatabase {
                   + " Found:\n" + _existingEmployee);
         }
       }
-    }, "d7949c273e4a328b9cc6f7901122846f", "28c9ef163ef0f8ab212b9055227cb6e2");
+    }, "37aee363a338a3e709ad259443e3bb30", "e20374727950c273922239867a4ec4b2");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

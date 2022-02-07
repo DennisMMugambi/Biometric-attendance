@@ -46,7 +46,7 @@ public class HomeFragment extends Fragment {
         mEnroll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              Navigation.findNavController(v).navigate(R.id.enrollActivity);
+              Navigation.findNavController(v).navigate(R.id.enrollFragment);
             }
         });
     }

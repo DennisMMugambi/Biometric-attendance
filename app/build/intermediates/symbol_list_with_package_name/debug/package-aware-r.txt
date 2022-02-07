@@ -1761,12 +1761,11 @@ id action_bar_title
 id action_container
 id action_context_bar
 id action_divider
-id action_enrollFragment_to_enrollmentDetailsFragment
 id action_history
 id action_homeFragment_to_adminFragment
 id action_homeFragment_to_attendanceHistoryFragment
 id action_homeFragment_to_employeeListFragment
-id action_homeFragment_to_enrollFragment
+id action_homeFragment_to_enrollmentDetailsFragment
 id action_image
 id action_menu_divider
 id action_menu_presenter
@@ -1889,7 +1888,6 @@ id employeeListFragment
 id end
 id end_padder
 id enroll
-id enrollFragment
 id enroll_layout
 id enrollmentDetailsFragment
 id enrollmentDetailsLayout

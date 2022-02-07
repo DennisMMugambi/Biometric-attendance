@@ -28,7 +28,8 @@ public class EnrollmentDetailsFragment extends Fragment {
     private TextInputEditText firstName, secondName, age,
     jobPosition, id;
     private View root;
-    private Button saveDetails;
+    private Button
+            saveDetails;
     EnrollmentDetailsViewModel viewModel;
     FingerPrintsDatabase db;
     View v;
@@ -46,7 +47,7 @@ public class EnrollmentDetailsFragment extends Fragment {
         //getRoomDatabaseReference and Insert Values
 
         db = Room.databaseBuilder(requireContext(), FingerPrintsDatabase.class,
-                "fingerprints_db").fallbackToDestructiveMigration().build();
+                "fingerprints_db") .build();
 
         //getViewModel to fetch data
         viewModel = new ViewModelProvider(requireActivity()).get(EnrollmentDetailsViewModel.class);
@@ -87,7 +88,7 @@ public class EnrollmentDetailsFragment extends Fragment {
 
             Executor executor = Executors.newSingleThreadExecutor();
             executor.execute(() -> db.fingerPrintDao().insertEmployee(employee));
-            Navigation.findNavController(v).navigate(R.id.enrollFragment);
+            Navigation.findNavController(v).navigate(R.id.homeFragment);
         }
     }
 }

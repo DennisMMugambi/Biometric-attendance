@@ -72,10 +72,6 @@ com/fgtit/device/SerialModule.java
  com.fgtit.device.SerialModule$OnUpImageListener
  com.fgtit.device.SerialModule$ReadThread
  com.fgtit.device.SerialModule$WorkerHandler
-com/UI/Enroll/EnrollFragment.java
- com.UI.Enroll.EnrollFragment
- com.UI.Enroll.EnrollFragment$1
- com.UI.Enroll.EnrollFragment$2
 com/fgtit/device/FPModule.java
  com.fgtit.device.FPModule
  com.fgtit.device.FPModule$1
@@ -103,6 +99,7 @@ com/fgtit/data/wsq.java
 com/UI/Home/HomeFragment.java
  com.UI.Home.HomeFragment
  com.UI.Home.HomeFragment$1
+ com.UI.Home.HomeFragment$2
 com/example/handsets/BuildConfig.java
  com.example.handsets.BuildConfig
 com/fgtit/fpcore/FPMatch.java

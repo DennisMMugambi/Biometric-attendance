@@ -1760,12 +1760,11 @@ int id action_bar_title 0x7f08003b
 int id action_container 0x7f08003c
 int id action_context_bar 0x7f08003d
 int id action_divider 0x7f08003e
-int id action_enrollFragment_to_enrollmentDetailsFragment 0x7f08003f
 int id action_history 0x7f080040
 int id action_homeFragment_to_adminFragment 0x7f080041
 int id action_homeFragment_to_attendanceHistoryFragment 0x7f080042
 int id action_homeFragment_to_employeeListFragment 0x7f080043
-int id action_homeFragment_to_enrollFragment 0x7f080044
+int id action_homeFragment_to_enrollmentDetailsFragment 0x7f0801d4
 int id action_image 0x7f080045
 int id action_menu_divider 0x7f080046
 int id action_menu_presenter 0x7f080047
@@ -1888,7 +1887,6 @@ int id employeeListFragment 0x7f0800b9
 int id end 0x7f0800ba
 int id end_padder 0x7f0800bb
 int id enroll 0x7f0800bc
-int id enrollFragment 0x7f0800bd
 int id enroll_layout 0x7f0800be
 int id enrollmentDetailsFragment 0x7f0800bf
 int id enrollmentDetailsLayout 0x7f0801d3

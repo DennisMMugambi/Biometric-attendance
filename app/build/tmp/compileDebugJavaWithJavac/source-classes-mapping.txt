@@ -1,11 +1,20 @@
 com/fgtit/data/ConversionsEx.java
  com.fgtit.data.ConversionsEx
+com/Converters/Converters.java
+ com.Converters.Converters
+ com.Converters.Converters$1
 com/fgtit/device/Constants.java
  com.fgtit.device.Constants
 com/UI/EnrollmentDetails/EnrollmentDetailsViewModel.java
  com.UI.EnrollmentDetails.EnrollmentDetailsViewModel
 com/UI/Home/HomeViewModel.java
  com.UI.Home.HomeViewModel
+Model/Attendance.java
+ Model.Attendance
+com/Helpers/SignInDialogHelper.java
+ com.Helpers.SignInDialogHelper
+ com.Helpers.SignInDialogHelper$1
+ com.Helpers.SignInDialogHelper$2
 com/fgtit/data/Conversions.java
  com.fgtit.data.Conversions
 Model/Employee.java
@@ -42,12 +51,18 @@ com/fgtit/device/UsbModule.java
  com.fgtit.device.UsbModule
 com/UI/EmployeeList/EmployeeListViewModel.java
  com.UI.EmployeeList.EmployeeListViewModel
+com/Utils/TimeWriter.java
+ com.Utils.TimeWriter
+com/Services/DateTimeWriterService.java
+ com.Services.DateTimeWriterService
 com/UI/Enroll/EnrollViewModel.java
  com.UI.Enroll.EnrollViewModel
 com/UI/AttendanceHistory/AttendanceViewModel.java
  com.UI.AttendanceHistory.AttendanceViewModel
 android_serialport_api/SerialPort.java
  android_serialport_api.SerialPort
+com/Utils/DateTime.java
+ com.Utils.DateTime
 com/Database/FingerPrintsDatabase.java
  com.Database.FingerPrintsDatabase
 com/fgtit/device/SerialModule.java
@@ -94,17 +109,29 @@ com/UI/EnrollmentDetails/EnrollmentDetailsFragment.java
  com.UI.EnrollmentDetails.EnrollmentDetailsFragment$1
 com/UI/Admin/AdminFragment.java
  com.UI.Admin.AdminFragment
+ com.UI.Admin.AdminFragment$1
+com/Dao/AttendanceDao.java
+ com.Dao.AttendanceDao
 com/fgtit/data/wsq.java
  com.fgtit.data.wsq
 com/UI/Home/HomeFragment.java
  com.UI.Home.HomeFragment
  com.UI.Home.HomeFragment$1
  com.UI.Home.HomeFragment$2
+ com.UI.Home.HomeFragment$3
+ com.UI.Home.HomeFragment$4
+ com.UI.Home.HomeFragment$5
 com/example/handsets/BuildConfig.java
  com.example.handsets.BuildConfig
+com/UI/Dialogs/SignInDialog.java
+ com.UI.Dialogs.SignInDialog
 com/fgtit/fpcore/FPMatch.java
  com.fgtit.fpcore.FPMatch
 com/fgtit/device/DataUtils.java
  com.fgtit.device.DataUtils
+com/Helpers/SuccessWindowManager.java
+ com.Helpers.SuccessWindowManager
+Model/UserAndAttendance.java
+ Model.UserAndAttendance
 com/UI/AttendanceHistory/AttendanceHistoryFragment.java
  com.UI.AttendanceHistory.AttendanceHistoryFragment

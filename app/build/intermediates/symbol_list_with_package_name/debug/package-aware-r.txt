@@ -236,6 +236,10 @@ attr circularflow_defaultAngle
 attr circularflow_defaultRadius
 attr circularflow_radiusInDP
 attr circularflow_viewCenter
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr clearsTag
 attr clickAction
 attr closeIcon
@@ -1288,6 +1292,7 @@ dimen action_bar_size
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
 dimen appcompat_dialog_background_inset
+dimen border_width_avatar
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -1345,11 +1350,17 @@ dimen design_tab_scrollable_min_width
 dimen design_tab_text_size
 dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
+dimen dimen_background_color_padding
+dimen dimen_card_margin
+dimen dimen_edge_margin
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
+dimen font_large
+dimen font_medium
+dimen font_small
 dimen highlight_alpha_material_colored
 dimen highlight_alpha_material_dark
 dimen highlight_alpha_material_light
@@ -1543,6 +1554,15 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen radius_card_staff
+dimen size_card_staff_height
+dimen size_card_staff_info_height
+dimen size_card_staff_info_width
+dimen size_card_staff_width
+dimen size_fingerprint_height
+dimen size_fingerprint_width
+dimen size_logo
+dimen size_vertical_progress_bar_width
 dimen subtitle_corner_radius
 dimen subtitle_outline_width
 dimen subtitle_shadow_offset
@@ -1772,7 +1792,6 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
-id action_settings
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1882,9 +1901,11 @@ id edit_query
 id edt_age
 id edt_first_name
 id edt_id
+id edt_phone
 id edt_position
 id edt_second_name
 id employeeListFragment
+id employee_name
 id end
 id end_padder
 id enroll
@@ -1996,6 +2017,7 @@ id neverCompleteToEnd
 id neverCompleteToStart
 id noScroll
 id noState
+id no_result
 id none
 id normal
 id north
@@ -2018,6 +2040,7 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id phone_il
 id pin
 id position
 id postLayout
@@ -2053,6 +2076,7 @@ id search_go_btn
 id search_mag_icon
 id search_plate
 id search_src_text
+id search_student
 id search_voice_btn
 id select_dialog_listview
 id selected
@@ -2093,6 +2117,8 @@ id staticPostLayout
 id status_bar_latest_event_content
 id stop
 id stretch
+id student_list
+id student_name
 id submenuarrow
 id submit_area
 id supportScrollUp
@@ -2147,6 +2173,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id user_image
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -2246,6 +2273,7 @@ layout fragment_employee
 layout fragment_enroll
 layout fragment_enrollment_details
 layout fragment_home
+layout layout_sign_in
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2292,6 +2320,7 @@ layout notification_template_part_time
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout student_list_layout
 layout support_simple_spinner_dropdown_item
 layout test_action_chip
 layout test_chip_zero_corner_radius
@@ -2358,6 +2387,7 @@ string clear_text_end_icon_content_description
 string enroll
 string enter_age
 string enter_id
+string enter_phone
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -2416,16 +2446,21 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string phone_empty
 string place_finger
 string position_empty
 string right_index
 string right_thumb
 string save
 string search_menu_title
+string search_view_hint
 string second_name
 string second_name_empty
 string sign_in
+string sign_in_message
+string sign_in_noted
 string sign_out
+string sign_out_message
 string status_bar_notification_info_overflow
 string tv_ready
 style AlertDialog_AppCompat
@@ -3155,6 +3190,7 @@ styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCo
 styleable Carousel carousel_backwardTransition carousel_emptyViewsBehavior carousel_firstView carousel_forwardTransition carousel_infinite carousel_nextState carousel_previousState carousel_touchUpMode carousel_touchUp_dampeningFactor carousel_touchUp_velocityThreshold
 styleable Chip android_textAppearance android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CollapsingToolbarLayout collapsedTitleGravity collapsedTitleTextAppearance contentScrim expandedTitleGravity expandedTitleMargin expandedTitleMarginBottom expandedTitleMarginEnd expandedTitleMarginStart expandedTitleMarginTop expandedTitleTextAppearance maxLines scrimAnimationDuration scrimVisibleHeightTrigger statusBarScrim title titleEnabled toolbarId
 styleable CollapsingToolbarLayout_Layout layout_collapseMode layout_collapseParallaxMultiplier
 styleable ColorStateListItem android_color android_alpha alpha

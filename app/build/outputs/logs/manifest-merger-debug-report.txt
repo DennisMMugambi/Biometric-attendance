@@ -1,17 +1,19 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:1-40:12
-INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:1-40:12
-INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:1-40:12
+ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:1-38:12
 MERGED from [androidx.navigation:navigation-fragment:2.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/c5b8acbb45739ad3e9aab49a3442ff87/navigation-fragment-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-ui:2.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/f2e70f4ea04dd4c6008607fc218b389e/navigation-ui-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.2.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/d1c39c6ed21ce1e3b84135603c28ee8c/material-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /home/dennis/.gradle/caches/transforms-2/files-2.1/46d0c12706a96a0aca7862b8af86c9b9/constraintlayout-2.1.3/AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.room:room-runtime:2.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/5abf2bd19869a4ce878ff58dc842efb2/room-runtime-2.1.0/AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/49a7e3800255747abffca0487d9096b9/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/656190232b4c9edd05b543c0e855b09d/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/57673166943b2d33bd35017fab114953/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.2.0-beta02] /home/dennis/.gradle/caches/transforms-2/files-2.1/ffd1d95895d79e21363d12cf0202ea55/fragment-1.2.0-beta02/AndroidManifest.xml:17:1-24:12
+MERGED from [de.hdodenhof:circleimageview:3.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/ed75d31a6a2715b937ec9e7d1c827d4f/jetified-circleimageview-3.1.0/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/8b2c48252b09c3fb3fab1e03530a07f1/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.room:room-runtime:2.2.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/c629e56aa4e5cbc2f1d6495720fc5f32/room-runtime-2.2.0/AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.navigation:navigation-runtime:2.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/e8f4af6392f463c9e8efeb03ac057f4a/navigation-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.transition:transition:1.2.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/519c015437730b42206993faabfdeab0/transition-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/3fca0f31f0163396334834147fd1c6f8/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -33,11 +35,11 @@ MERGED from [androidx.customview:customview:1.0.0] /home/dennis/.gradle/caches/t
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/4182439bffbb9c45fe6b9f0dd90c75e0/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/8736503696ab9377299b704a5d368960/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.3.2] /home/dennis/.gradle/caches/transforms-2/files-2.1/8daa5a168526d6c89afec07423d6eb48/core-1.3.2/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.sqlite:sqlite-framework:2.0.1] /home/dennis/.gradle/caches/transforms-2/files-2.1/5ac9020d9cf014a2bbe67ea251498148/sqlite-framework-2.0.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.sqlite:sqlite:2.0.1] /home/dennis/.gradle/caches/transforms-2/files-2.1/064b3493d741b9f242769f34f975ea5f/sqlite-2.0.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/d0881e6b1bfc24bd05faa757f600ba86/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0-beta01] /home/dennis/.gradle/caches/transforms-2/files-2.1/26690ee65f79e9019310afd53a8dc9be/jetified-lifecycle-viewmodel-savedstate-1.0.0-beta01/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0-beta01] /home/dennis/.gradle/caches/transforms-2/files-2.1/7d5913824a119ec06096562141c14641/lifecycle-viewmodel-2.2.0-beta01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] /home/dennis/.gradle/caches/transforms-2/files-2.1/5ac9020d9cf014a2bbe67ea251498148/sqlite-framework-2.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.0.1] /home/dennis/.gradle/caches/transforms-2/files-2.1/064b3493d741b9f242769f34f975ea5f/sqlite-2.0.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/adef7a42e893c88f1173679a74d39abd/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/58e66b8baba2e7636236250dbda5786c/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/e4221681558d38e71e3b7ffdf91c89dc/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -49,8 +51,8 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/dennis/.gradle/c
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0-beta01] /home/dennis/.gradle/caches/transforms-2/files-2.1/f14bc878fab65e91e0988f1bd1aef410/lifecycle-livedata-core-2.2.0-beta01/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/72071604f8ac2b2678fe1ed7166cfc97/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/207acddd302c825de4cf6baf4fa19438/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:1-40:12
-INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:1-38:12
 	package
 		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:5:5-35
 		INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml
@@ -61,7 +63,7 @@ INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidMani
 		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:4:5-51
 	android:versionCode
 		INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:1-40:12
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:1-38:12
 		INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:2:11-69
@@ -89,14 +91,20 @@ ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifes
 		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:16:9-44
 	android:name
 		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:15:9-68
+uses-permission#android.permission.SEND_SMS
+ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:17:5-66
+	android:name
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:17:22-64
 application
-ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:18:5-38:19
+ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:19:5-36:19
 MERGED from [com.google.android.material:material:1.2.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/d1c39c6ed21ce1e3b84135603c28ee8c/material-1.2.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.2.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/d1c39c6ed21ce1e3b84135603c28ee8c/material-1.2.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /home/dennis/.gradle/caches/transforms-2/files-2.1/46d0c12706a96a0aca7862b8af86c9b9/constraintlayout-2.1.3/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /home/dennis/.gradle/caches/transforms-2/files-2.1/46d0c12706a96a0aca7862b8af86c9b9/constraintlayout-2.1.3/AndroidManifest.xml:9:5-20
-MERGED from [androidx.room:room-runtime:2.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/5abf2bd19869a4ce878ff58dc842efb2/room-runtime-2.1.0/AndroidManifest.xml:24:5-28:19
-MERGED from [androidx.room:room-runtime:2.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/5abf2bd19869a4ce878ff58dc842efb2/room-runtime-2.1.0/AndroidManifest.xml:24:5-28:19
+MERGED from [de.hdodenhof:circleimageview:3.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/ed75d31a6a2715b937ec9e7d1c827d4f/jetified-circleimageview-3.1.0/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/ed75d31a6a2715b937ec9e7d1c827d4f/jetified-circleimageview-3.1.0/AndroidManifest.xml:9:5-20
+MERGED from [androidx.room:room-runtime:2.2.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/c629e56aa4e5cbc2f1d6495720fc5f32/room-runtime-2.2.0/AndroidManifest.xml:24:5-28:19
+MERGED from [androidx.room:room-runtime:2.2.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/c629e56aa4e5cbc2f1d6495720fc5f32/room-runtime-2.2.0/AndroidManifest.xml:24:5-28:19
 MERGED from [androidx.core:core:1.3.2] /home/dennis/.gradle/caches/transforms-2/files-2.1/8daa5a168526d6c89afec07423d6eb48/core-1.3.2/AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.3.2] /home/dennis/.gradle/caches/transforms-2/files-2.1/8daa5a168526d6c89afec07423d6eb48/core-1.3.2/AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/d0881e6b1bfc24bd05faa757f600ba86/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
@@ -104,41 +112,35 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/denni
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.2] /home/dennis/.gradle/caches/transforms-2/files-2.1/8daa5a168526d6c89afec07423d6eb48/core-1.3.2/AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:21:9-41
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:22:9-41
 	android:icon
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:20:9-41
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:21:9-41
 	android:allowBackup
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:19:9-35
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:20:9-35
 	android:theme
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:22:9-40
-activity#com.UI.Enroll.EnrollActivity
-ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:23:9-25:40
-	android:exported
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:25:13-37
-	android:name
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:24:13-56
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:23:9-40
 activity#com.example.handsets.MainActivity
-ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:26:9-37:20
+ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:24:9-35:20
 	android:screenOrientation
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:30:13-50
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:28:13-50
 	android:label
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:29:13-45
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:27:13-45
 	android:exported
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:28:13-36
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:26:13-36
 	android:theme
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:31:13-69
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:29:13-69
 	android:name
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:27:13-41
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:25:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:32:13-36:29
+ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:30:13-34:29
 action#android.intent.action.MAIN
-ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:33:17-69
+ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:31:17-69
 	android:name
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:33:25-66
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:35:17-77
+ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:33:17-77
 	android:name
-		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:35:27-74
+		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:33:27-74
 uses-sdk
 INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml
@@ -151,8 +153,6 @@ MERGED from [com.google.android.material:material:1.2.0] /home/dennis/.gradle/ca
 MERGED from [com.google.android.material:material:1.2.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/d1c39c6ed21ce1e3b84135603c28ee8c/material-1.2.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /home/dennis/.gradle/caches/transforms-2/files-2.1/46d0c12706a96a0aca7862b8af86c9b9/constraintlayout-2.1.3/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /home/dennis/.gradle/caches/transforms-2/files-2.1/46d0c12706a96a0aca7862b8af86c9b9/constraintlayout-2.1.3/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.room:room-runtime:2.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/5abf2bd19869a4ce878ff58dc842efb2/room-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.room:room-runtime:2.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/5abf2bd19869a4ce878ff58dc842efb2/room-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/49a7e3800255747abffca0487d9096b9/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/49a7e3800255747abffca0487d9096b9/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/656190232b4c9edd05b543c0e855b09d/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
@@ -161,6 +161,12 @@ MERGED from [androidx.appcompat:appcompat:1.2.0] /home/dennis/.gradle/caches/tra
 MERGED from [androidx.appcompat:appcompat:1.2.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/57673166943b2d33bd35017fab114953/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.2.0-beta02] /home/dennis/.gradle/caches/transforms-2/files-2.1/ffd1d95895d79e21363d12cf0202ea55/fragment-1.2.0-beta02/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.2.0-beta02] /home/dennis/.gradle/caches/transforms-2/files-2.1/ffd1d95895d79e21363d12cf0202ea55/fragment-1.2.0-beta02/AndroidManifest.xml:20:5-22:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/ed75d31a6a2715b937ec9e7d1c827d4f/jetified-circleimageview-3.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/ed75d31a6a2715b937ec9e7d1c827d4f/jetified-circleimageview-3.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/8b2c48252b09c3fb3fab1e03530a07f1/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/8b2c48252b09c3fb3fab1e03530a07f1/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.room:room-runtime:2.2.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/c629e56aa4e5cbc2f1d6495720fc5f32/room-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.2.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/c629e56aa4e5cbc2f1d6495720fc5f32/room-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-runtime:2.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/e8f4af6392f463c9e8efeb03ac057f4a/navigation-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-runtime:2.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/e8f4af6392f463c9e8efeb03ac057f4a/navigation-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.transition:transition:1.2.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/519c015437730b42206993faabfdeab0/transition-1.2.0/AndroidManifest.xml:20:5-22:41
@@ -203,16 +209,16 @@ MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/denni
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/8736503696ab9377299b704a5d368960/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.3.2] /home/dennis/.gradle/caches/transforms-2/files-2.1/8daa5a168526d6c89afec07423d6eb48/core-1.3.2/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.3.2] /home/dennis/.gradle/caches/transforms-2/files-2.1/8daa5a168526d6c89afec07423d6eb48/core-1.3.2/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.sqlite:sqlite-framework:2.0.1] /home/dennis/.gradle/caches/transforms-2/files-2.1/5ac9020d9cf014a2bbe67ea251498148/sqlite-framework-2.0.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite-framework:2.0.1] /home/dennis/.gradle/caches/transforms-2/files-2.1/5ac9020d9cf014a2bbe67ea251498148/sqlite-framework-2.0.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite:2.0.1] /home/dennis/.gradle/caches/transforms-2/files-2.1/064b3493d741b9f242769f34f975ea5f/sqlite-2.0.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite:2.0.1] /home/dennis/.gradle/caches/transforms-2/files-2.1/064b3493d741b9f242769f34f975ea5f/sqlite-2.0.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/d0881e6b1bfc24bd05faa757f600ba86/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/d0881e6b1bfc24bd05faa757f600ba86/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0-beta01] /home/dennis/.gradle/caches/transforms-2/files-2.1/26690ee65f79e9019310afd53a8dc9be/jetified-lifecycle-viewmodel-savedstate-1.0.0-beta01/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0-beta01] /home/dennis/.gradle/caches/transforms-2/files-2.1/26690ee65f79e9019310afd53a8dc9be/jetified-lifecycle-viewmodel-savedstate-1.0.0-beta01/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0-beta01] /home/dennis/.gradle/caches/transforms-2/files-2.1/7d5913824a119ec06096562141c14641/lifecycle-viewmodel-2.2.0-beta01/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0-beta01] /home/dennis/.gradle/caches/transforms-2/files-2.1/7d5913824a119ec06096562141c14641/lifecycle-viewmodel-2.2.0-beta01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] /home/dennis/.gradle/caches/transforms-2/files-2.1/5ac9020d9cf014a2bbe67ea251498148/sqlite-framework-2.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] /home/dennis/.gradle/caches/transforms-2/files-2.1/5ac9020d9cf014a2bbe67ea251498148/sqlite-framework-2.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] /home/dennis/.gradle/caches/transforms-2/files-2.1/064b3493d741b9f242769f34f975ea5f/sqlite-2.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] /home/dennis/.gradle/caches/transforms-2/files-2.1/064b3493d741b9f242769f34f975ea5f/sqlite-2.0.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/adef7a42e893c88f1173679a74d39abd/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/adef7a42e893c88f1173679a74d39abd/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/58e66b8baba2e7636236250dbda5786c/documentfile-1.0.0/AndroidManifest.xml:20:5-44
@@ -246,8 +252,8 @@ INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidMani
 		ADDED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml
 		INJECTED from /home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml
 service#androidx.room.MultiInstanceInvalidationService
-ADDED from [androidx.room:room-runtime:2.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/5abf2bd19869a4ce878ff58dc842efb2/room-runtime-2.1.0/AndroidManifest.xml:25:9-27:40
+ADDED from [androidx.room:room-runtime:2.2.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/c629e56aa4e5cbc2f1d6495720fc5f32/room-runtime-2.2.0/AndroidManifest.xml:25:9-27:40
 	android:exported
-		ADDED from [androidx.room:room-runtime:2.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/5abf2bd19869a4ce878ff58dc842efb2/room-runtime-2.1.0/AndroidManifest.xml:27:13-37
+		ADDED from [androidx.room:room-runtime:2.2.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/c629e56aa4e5cbc2f1d6495720fc5f32/room-runtime-2.2.0/AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from [androidx.room:room-runtime:2.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/5abf2bd19869a4ce878ff58dc842efb2/room-runtime-2.1.0/AndroidManifest.xml:26:13-74
+		ADDED from [androidx.room:room-runtime:2.2.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/c629e56aa4e5cbc2f1d6495720fc5f32/room-runtime-2.2.0/AndroidManifest.xml:26:13-74

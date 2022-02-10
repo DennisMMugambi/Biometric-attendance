@@ -34,4 +34,10 @@
     <string name="age_empty">age cannot be empty</string>
     <string name="position_empty">job position cannot be empty</string>
     <string name="id_empty">id cannot be empty</string>
+    <string name="sign_in_noted">Your sign in has been successfully logged</string>
+    <string name="enter_phone">Enter guardian\'s phone number</string>
+    <string name="phone_empty">Phone number cannot be empty</string>
+    <string name="sign_in_message">has signed in at</string>
+    <string name="sign_out_message">has signed out at</string>
+    <string name="search_view_hint">Search student</string>
 </resources>

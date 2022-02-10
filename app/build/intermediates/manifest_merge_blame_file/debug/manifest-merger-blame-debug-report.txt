@@ -29,57 +29,54 @@
 18    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
 18-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:14:5-16:47
 18-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:15:9-68
-19
-20    <application
-20-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:18:5-38:19
-21        android:allowBackup="true"
-21-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:19:9-35
-22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-22-->[androidx.core:core:1.3.2] /home/dennis/.gradle/caches/transforms-2/files-2.1/8daa5a168526d6c89afec07423d6eb48/core-1.3.2/AndroidManifest.xml:24:18-86
-23        android:debuggable="true"
-24        android:icon="@drawable/ic_list"
-24-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:20:9-41
-25        android:label="@string/app_name"
+19    <uses-permission android:name="android.permission.SEND_SMS" />
+19-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:17:5-66
+19-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:17:22-64
+20
+21    <application
+21-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:19:5-36:19
+22        android:allowBackup="true"
+22-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:20:9-35
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.3.2] /home/dennis/.gradle/caches/transforms-2/files-2.1/8daa5a168526d6c89afec07423d6eb48/core-1.3.2/AndroidManifest.xml:24:18-86
+24        android:debuggable="true"
+25        android:icon="@drawable/ic_list"
 25-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:21:9-41
-26        android:testOnly="true"
-27        android:theme="@style/AppTheme" >
-27-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:22:9-40
-28        <activity
-28-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:23:9-25:40
-29            android:name="com.UI.Enroll.EnrollActivity"
-29-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:24:13-56
-30            android:exported="false" />
-30-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:25:13-37
-31        <activity
-31-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:26:9-37:20
-32            android:name="com.example.handsets.MainActivity"
-32-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:27:13-41
-33            android:exported="true"
-33-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:28:13-36
-34            android:label="@string/app_name"
-34-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:29:13-45
-35            android:screenOrientation="landscape"
-35-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:30:13-50
-36            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
-36-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:31:13-69
-37            <intent-filter>
-37-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:32:13-36:29
-38                <action android:name="android.intent.action.MAIN" />
-38-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:33:17-69
-38-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:33:25-66
-39
-40                <category android:name="android.intent.category.LAUNCHER" />
-40-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:35:17-77
-40-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:35:27-74
-41            </intent-filter>
-42        </activity>
-43
-44        <service
-44-->[androidx.room:room-runtime:2.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/5abf2bd19869a4ce878ff58dc842efb2/room-runtime-2.1.0/AndroidManifest.xml:25:9-27:40
-45            android:name="androidx.room.MultiInstanceInvalidationService"
-45-->[androidx.room:room-runtime:2.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/5abf2bd19869a4ce878ff58dc842efb2/room-runtime-2.1.0/AndroidManifest.xml:26:13-74
-46            android:exported="false" />
-46-->[androidx.room:room-runtime:2.1.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/5abf2bd19869a4ce878ff58dc842efb2/room-runtime-2.1.0/AndroidManifest.xml:27:13-37
-47    </application>
-48
-49</manifest>
+26        android:label="@string/app_name"
+26-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:22:9-41
+27        android:testOnly="true"
+28        android:theme="@style/AppTheme" >
+28-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:23:9-40
+29        <activity
+29-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:24:9-35:20
+30            android:name="com.example.handsets.MainActivity"
+30-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:25:13-41
+31            android:exported="true"
+31-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:26:13-36
+32            android:label="@string/app_name"
+32-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:27:13-45
+33            android:screenOrientation="landscape"
+33-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:28:13-50
+34            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+34-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:29:13-69
+35            <intent-filter>
+35-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:30:13-34:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:31:17-69
+36-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:31:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:33:17-77
+38-->/home/dennis/AndroidStudioProjects/Hezion/app/src/main/AndroidManifest.xml:33:27-74
+39            </intent-filter>
+40        </activity>
+41
+42        <service
+42-->[androidx.room:room-runtime:2.2.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/c629e56aa4e5cbc2f1d6495720fc5f32/room-runtime-2.2.0/AndroidManifest.xml:25:9-27:40
+43            android:name="androidx.room.MultiInstanceInvalidationService"
+43-->[androidx.room:room-runtime:2.2.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/c629e56aa4e5cbc2f1d6495720fc5f32/room-runtime-2.2.0/AndroidManifest.xml:26:13-74
+44            android:exported="false" />
+44-->[androidx.room:room-runtime:2.2.0] /home/dennis/.gradle/caches/transforms-2/files-2.1/c629e56aa4e5cbc2f1d6495720fc5f32/room-runtime-2.2.0/AndroidManifest.xml:27:13-37
+45    </application>
+46
+47</manifest>

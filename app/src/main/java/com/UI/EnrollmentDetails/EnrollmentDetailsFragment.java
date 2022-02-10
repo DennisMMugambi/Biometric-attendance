@@ -26,10 +26,9 @@ import Model.Employee;
 
 public class EnrollmentDetailsFragment extends Fragment {
     private TextInputEditText firstName, secondName, age,
-    jobPosition, id;
+    jobPosition, id, phone_number;
     private View root;
-    private Button
-            saveDetails;
+    private Button saveDetails;
     EnrollmentDetailsViewModel viewModel;
     FingerPrintsDatabase db;
     View v;
@@ -47,7 +46,7 @@ public class EnrollmentDetailsFragment extends Fragment {
         //getRoomDatabaseReference and Insert Values
 
         db = Room.databaseBuilder(requireContext(), FingerPrintsDatabase.class,
-                "fingerprints_db") .build();
+                "fingerprints_db").fallbackToDestructiveMigration().build();
 
         //getViewModel to fetch data
         viewModel = new ViewModelProvider(requireActivity()).get(EnrollmentDetailsViewModel.class);
@@ -61,6 +60,7 @@ public class EnrollmentDetailsFragment extends Fragment {
         age = root.findViewById(R.id.edt_age);
         jobPosition = root.findViewById(R.id.edt_position);
         id = root.findViewById(R.id.edt_id);
+        phone_number = root.findViewById(R.id.edt_phone);
         saveDetails = root.findViewById(R.id.save_details);
         saveDetails.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,14 +81,16 @@ public class EnrollmentDetailsFragment extends Fragment {
             Snackbar.make(requireView(), R.string.position_empty, Snackbar.LENGTH_SHORT).show();
         } else if (Objects.requireNonNull(id.getText()).toString().isEmpty()){
             Snackbar.make(requireView(), R.string.id_empty, Snackbar.LENGTH_SHORT).show();
+        } else if(Objects.requireNonNull(phone_number.getText()).toString().isEmpty()) {
+            Snackbar.make(requireView(), R.string.phone_empty, Snackbar.LENGTH_SHORT).show();
         } else {
-            String fullname = firstName.getText().toString() + " " + secondName.getText().toString();
-            Employee employee = new Employee(viewModel.getRightThumb(), viewModel.getRightIndex(), viewModel.getLeftThumb(),
-                    viewModel.getLeftIndex(), fullname, Integer.parseInt(age.getText().toString()), jobPosition.getText().toString(), id.getText().toString());
+                String fullname = firstName.getText().toString() + " " + secondName.getText().toString();
+                Employee employee = new Employee(viewModel.getRightThumb(), viewModel.getRightIndex(), viewModel.getLeftThumb(),
+                        viewModel.getLeftIndex(), fullname, Integer.parseInt(age.getText().toString()), jobPosition.getText().toString(), id.getText().toString(), 0, phone_number.toString());
 
-            Executor executor = Executors.newSingleThreadExecutor();
-            executor.execute(() -> db.fingerPrintDao().insertEmployee(employee));
-            Navigation.findNavController(v).navigate(R.id.homeFragment);
+                Executor executor = Executors.newSingleThreadExecutor();
+                executor.execute(() -> db.fingerPrintDao().insertEmployee(employee));
+                Navigation.findNavController(v).navigate(R.id.homeFragment);
+            }
         }
     }
-}

@@ -10,7 +10,7 @@ import androidx.room.PrimaryKey;
 @Entity(tableName = "Employee")
 public class Employee {
     @PrimaryKey(autoGenerate = true)
-    private int id;
+    private int employee_id;
     @ColumnInfo(name = "rightThumb")
     private byte[] rightThumb;
     @ColumnInfo(name = "rightIndex")
@@ -19,7 +19,7 @@ public class Employee {
     private byte[] leftThumb;
     @ColumnInfo(name = "leftIndex")
     private byte[] leftIndex;
-    @ColumnInfo(name = "Name")
+    @ColumnInfo(name = "employeeName")
     private String employeeName;
     @ColumnInfo(name = "Age")
     private int age;
@@ -27,9 +27,13 @@ public class Employee {
     private String jobTitle;
     @ColumnInfo(name = "identification")
     private String identification;
+    @ColumnInfo(name = "attendance_score")
+    private Float attendanceScore;
+    @ColumnInfo(name = "parent_contact")
+    private String phone_number;
 
-    public Employee(int id, byte[] rightThumb, byte[] rightIndex, byte[] leftThumb, byte[] leftIndex, String employeeName, int age, String jobTitle, String identification) {
-        this.id = id;
+    public Employee(int id, byte[] rightThumb, byte[] rightIndex, byte[] leftThumb, byte[] leftIndex, String employeeName, int age, String jobTitle, String identification, float attendanceScore, String phone_number) {
+        this.employee_id = id;
         this.rightThumb = rightThumb;
         this.rightIndex = rightIndex;
         this.leftThumb = leftThumb;
@@ -38,10 +42,12 @@ public class Employee {
         this.age = age;
         this.jobTitle = jobTitle;
         this.identification = identification;
+        this.attendanceScore = attendanceScore;
+        this.phone_number = phone_number;
     }
 
-    @Ignore
-    public Employee(byte[] rightThumb, byte[] rightIndex, byte[] leftThumb, byte[] leftIndex, String employeeName, int age, String jobTitle, String identification) {
+    //@Ignore
+    public Employee(byte[] rightThumb, byte[] rightIndex, byte[] leftThumb, byte[] leftIndex, String employeeName, int age, String jobTitle, String identification, float attendanceScore, String phone_number) {
         this.rightThumb = rightThumb;
         this.rightIndex = rightIndex;
         this.leftThumb = leftThumb;
@@ -50,14 +56,24 @@ public class Employee {
         this.age = age;
         this.jobTitle = jobTitle;
         this.identification = identification;
+        this.attendanceScore = attendanceScore;
+        this.phone_number = phone_number;
     }
 
-    public int getId() {
-        return id;
+    public Float getAttendanceScore() {
+        return attendanceScore;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setAttendanceScore(Float attendanceScore) {
+        this.attendanceScore = attendanceScore;
+    }
+
+    public int getEmployee_id() {
+        return employee_id;
+    }
+
+    public void setEmployee_id(int employee_id) {
+        this.employee_id = employee_id;
     }
 
     public byte[] getRightThumb() {
@@ -122,5 +138,13 @@ public class Employee {
 
     public void setIdentification(String identification) {
         this.identification = identification;
+    }
+
+    public String getPhone_number() {
+        return phone_number;
+    }
+
+    public void setPhone_number(String phone_number) {
+        this.phone_number = phone_number;
     }
 }

@@ -284,10 +284,6 @@ public class MainActivity extends AppCompatActivity {
 	public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 		View v;
 		switch (item.getItemId()) {
-			case R.id.action_settings:
-				//Do nothing for now
-
-				return true;
 			case R.id.action_history:
 				//v = findViewById(R.id.action_history);
 				//Navigation.findNavController(v).navigate(R.id.attendanceHistoryFragment);

@@ -12,12 +12,12 @@
         "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/layout/fragment_home.xml"
     },
     {
-        "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/layout_fragment_attendance_history.xml.flat",
-        "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/layout/fragment_attendance_history.xml"
-    },
-    {
         "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/drawable_ic_fingerprint.xml.flat",
         "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/drawable/ic_fingerprint.xml"
+    },
+    {
+        "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/layout_fragment_attendance_history.xml.flat",
+        "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/layout/fragment_attendance_history.xml"
     },
     {
         "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
@@ -30,6 +30,10 @@
     {
         "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_foreground.png.flat",
         "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/layout_layout_sign_in.xml.flat",
+        "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/layout/layout_sign_in.xml"
     },
     {
         "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/drawable_ic_list.xml.flat",
@@ -106,6 +110,10 @@
     {
         "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
         "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/layout_student_list_layout.xml.flat",
+        "source": "/home/dennis/AndroidStudioProjects/Hezion/app/src/main/res/layout/student_list_layout.xml"
     },
     {
         "merged": "/home/dennis/AndroidStudioProjects/Hezion/app/build/intermediates/res/merged/debug/menu_main.xml.flat",

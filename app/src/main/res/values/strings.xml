@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">FP Demo</string>
+    <string name="app_name">Attendance</string>
     <string name="action_settings">Settings</string>
 
 
@@ -40,4 +40,8 @@
     <string name="sign_in_message">has signed in at</string>
     <string name="sign_out_message">has signed out at</string>
     <string name="search_view_hint">Search student</string>
+    <string name="user">John Doe</string>
+    <string name="age">13</string>
+    <string name="school">Makini School</string>
+    <string name="grade">6</string>
 </resources>

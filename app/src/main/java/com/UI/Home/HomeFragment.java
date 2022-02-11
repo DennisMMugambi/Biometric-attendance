@@ -179,8 +179,8 @@ public class HomeFragment extends Fragment {
                             //insertFingerPrint(refdata);
                             //navigate to different fragment
                             if(enrollCounter <= 3){
+
                                 captureFingerPrint();
-                                enrollCounter+=1;
                                 if(enrollCounter == 0){
                                     viewModel.setRightThumb(refdata);
                                 } else if(enrollCounter == 1){
@@ -312,6 +312,7 @@ public class HomeFragment extends Fragment {
         } else if (enrollCounter == 3){
             currentFinger.setText(R.string.left_index);
         }
+        enrollCounter+=1;
     }
 
     private void matchFingerPrint(){

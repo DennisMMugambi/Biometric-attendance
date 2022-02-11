@@ -1771,6 +1771,8 @@ id actionDown
 id actionDownUp
 id actionUp
 id action_admin
+id action_adminFragment_to_studentDetailsFragment
+id action_attendanceHistoryFragment_to_selectedDateAttendanceFragment
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -1797,6 +1799,7 @@ id actions
 id activity_chooser_view_content
 id add
 id adminFragment
+id admin_layout
 id age_il
 id alertTitle
 id aligned
@@ -1810,6 +1813,7 @@ id anticipate
 id asConfigured
 id async
 id attendanceHistoryFragment
+id attendance_layout
 id auto
 id autoComplete
 id autoCompleteToEnd
@@ -1828,6 +1832,7 @@ id bounceStart
 id button1
 id buttonPanel
 id cache_measures
+id calendarView
 id callMeasure
 id cancel_action
 id cancel_button
@@ -1877,6 +1882,10 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id detials_age
+id detials_grade
+id detials_name
+id detials_school
 id dialog_button
 id dimensions
 id direct
@@ -2044,6 +2053,7 @@ id phone_il
 id pin
 id position
 id postLayout
+id profile_image
 id progress_circular
 id progress_horizontal
 id radio
@@ -2080,6 +2090,7 @@ id search_student
 id search_voice_btn
 id select_dialog_listview
 id selected
+id selectedDateAttendanceFragment
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -2117,6 +2128,7 @@ id staticPostLayout
 id status_bar_latest_event_content
 id stop
 id stretch
+id studentDetailsFragment
 id student_list
 id student_name
 id submenuarrow
@@ -2273,6 +2285,8 @@ layout fragment_employee
 layout fragment_enroll
 layout fragment_enrollment_details
 layout fragment_home
+layout fragment_selected_date_attendance
+layout fragment_student_details
 layout layout_sign_in
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
@@ -2372,6 +2386,7 @@ string abc_toolbar_collapse_description
 string action_history
 string action_settings
 string activity_home
+string age
 string age_empty
 string app_name
 string appbar_scrolling_view_behavior
@@ -2393,6 +2408,7 @@ string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string first_name
+string grade
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
@@ -2452,6 +2468,7 @@ string position_empty
 string right_index
 string right_thumb
 string save
+string school
 string search_menu_title
 string search_view_hint
 string second_name
@@ -2463,6 +2480,7 @@ string sign_out
 string sign_out_message
 string status_bar_notification_info_overflow
 string tv_ready
+string user
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

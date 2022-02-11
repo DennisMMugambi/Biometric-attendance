@@ -1,5 +1,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -14,16 +15,16 @@
     <ListView
         android:id="@+id/student_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
     <TextView
-        android:visibility="invisible"
         android:id="@+id/no_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sorry can't find student with that name"
-        android:textSize="30sp"
         android:gravity="center"
-        android:textColor="@android:color/black"/>
+        android:text="Sorry can't find student with that name"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:visibility="invisible" />
 
 </LinearLayout>

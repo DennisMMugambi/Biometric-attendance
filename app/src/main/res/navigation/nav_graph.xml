@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.UI.Home.HomeFragment"
-        android:label="fragment_home2"
+        android:label="Home"
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_adminFragment"
@@ -26,21 +26,39 @@
     <fragment
         android:id="@+id/adminFragment"
         android:name="com.UI.Admin.AdminFragment"
-        android:label="fragment_admin"
-        tools:layout="@layout/fragment_admin" />
+        android:label="Admin"
+        tools:layout="@layout/fragment_admin" >
+        <action
+            android:id="@+id/action_adminFragment_to_studentDetailsFragment"
+            app:destination="@id/studentDetailsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/attendanceHistoryFragment"
         android:name="com.UI.AttendanceHistory.AttendanceHistoryFragment"
-        android:label="fragment_attendance_history"
-        tools:layout="@layout/fragment_attendance_history" />
+        android:label="Attendance History"
+        tools:layout="@layout/fragment_attendance_history" >
+        <action
+            android:id="@+id/action_attendanceHistoryFragment_to_selectedDateAttendanceFragment"
+            app:destination="@id/selectedDateAttendanceFragment" />
+    </fragment>
     <fragment
         android:id="@+id/employeeListFragment"
         android:name="com.UI.EmployeeList.EmployeeListFragment"
-        android:label="fragment_employee"
+        android:label="Student"
         tools:layout="@layout/fragment_employee" />
     <fragment
         android:id="@+id/enrollmentDetailsFragment"
         android:name="com.UI.EnrollmentDetails.EnrollmentDetailsFragment"
-        android:label="fragment_enrollment_details"
+        android:label="Enrollment Details"
         tools:layout="@layout/fragment_enrollment_details" />
+    <fragment
+        android:id="@+id/studentDetailsFragment"
+        android:name="com.UI.StudentDetails.StudentDetailsFragment"
+        android:label="Student Details"
+        tools:layout="@layout/fragment_student_details" />
+    <fragment
+        android:id="@+id/selectedDateAttendanceFragment"
+        android:name="com.UI.SelectedDateAttendance.SelectedDateAttendanceFragment"
+        android:label="Daily Attendance"
+        tools:layout="@layout/fragment_selected_date_attendance" />
 </navigation>

@@ -100,16 +100,21 @@ com/fgtit/device/FPModule.java
  com.fgtit.device.FPModule$8
  com.fgtit.device.FPModule$9
  com.fgtit.device.FPModule$WorkThread
+com/UI/SelectedDateAttendance/SelectedDateAttendanceFragment.java
+ com.UI.SelectedDateAttendance.SelectedDateAttendanceFragment
 com/UI/EmployeeList/EmployeeListFragment.java
  com.UI.EmployeeList.EmployeeListFragment
 com/UI/Admin/AdminViewModel.java
  com.UI.Admin.AdminViewModel
+com/UI/StudentDetails/StudentDetailsFragment.java
+ com.UI.StudentDetails.StudentDetailsFragment
 com/UI/EnrollmentDetails/EnrollmentDetailsFragment.java
  com.UI.EnrollmentDetails.EnrollmentDetailsFragment
  com.UI.EnrollmentDetails.EnrollmentDetailsFragment$1
 com/UI/Admin/AdminFragment.java
  com.UI.Admin.AdminFragment
  com.UI.Admin.AdminFragment$1
+ com.UI.Admin.AdminFragment$2
 com/Dao/AttendanceDao.java
  com.Dao.AttendanceDao
 com/fgtit/data/wsq.java
@@ -135,3 +140,4 @@ Model/UserAndAttendance.java
  Model.UserAndAttendance
 com/UI/AttendanceHistory/AttendanceHistoryFragment.java
  com.UI.AttendanceHistory.AttendanceHistoryFragment
+ com.UI.AttendanceHistory.AttendanceHistoryFragment$1

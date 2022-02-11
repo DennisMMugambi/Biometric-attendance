@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 import androidx.room.Room;
 
 import com.Database.FingerPrintsDatabase;
@@ -31,6 +33,7 @@ public class AdminFragment extends Fragment {
     ArrayList<String> studentNames;
     FingerPrintsDatabase db;
     TextView noResult;
+    View v;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -42,6 +45,7 @@ public class AdminFragment extends Fragment {
         searchRegistree.setQueryHint("Search students");
         listView = root.findViewById(R.id.student_list);
         noResult = root.findViewById(R.id.no_result);
+        v = root.findViewById(R.id.admin_layout);
 
         db = Room.databaseBuilder(requireContext(), FingerPrintsDatabase.class,
                 "fingerprints_db").fallbackToDestructiveMigration().allowMainThreadQueries().build();
@@ -69,6 +73,12 @@ public class AdminFragment extends Fragment {
             @Override
             public boolean onQueryTextChange(String newText) {
                 return false;
+            }
+        });
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Navigation.findNavController(v).navigate(R.id.studentDetailsFragment);
             }
         });
         return root;

@@ -104,6 +104,8 @@ com/UI/EmployeeList/EmployeeListFragment.java
  com.UI.EmployeeList.EmployeeListFragment
 com/UI/Admin/AdminViewModel.java
  com.UI.Admin.AdminViewModel
+com/UI/StudentDetails/StudentDetailsFragment.java
+ com.UI.StudentDetails.StudentDetailsFragment
 com/UI/EnrollmentDetails/EnrollmentDetailsFragment.java
  com.UI.EnrollmentDetails.EnrollmentDetailsFragment
  com.UI.EnrollmentDetails.EnrollmentDetailsFragment$1

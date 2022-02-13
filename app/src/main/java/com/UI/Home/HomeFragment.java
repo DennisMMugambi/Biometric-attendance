@@ -108,7 +108,7 @@ public class HomeFragment extends Fragment {
     private int REQUEST_PERMISSION_CODE = 1;
     private static String[] PERMISSIONS_STORAGE = {Manifest.permission.READ_EXTERNAL_STORAGE,
             Manifest.permission.WRITE_EXTERNAL_STORAGE};
-    Boolean matched;
+    Boolean matched = false;
     String phone_number;
 
     @Override
@@ -337,7 +337,7 @@ public class HomeFragment extends Fragment {
                     fingerprints.add(storedFingerPrints.get(i).getLeftThumb());
                     fingerprints.add(storedFingerPrints.get(i).getLeftIndex());
                     for (int m = 0; m < fingerprints.size(); m++) {
-                        if (fpm.MatchTemplate(fingerprints.get(i), 512, matdata, matsize, 60)) {
+                        if (fpm.MatchTemplate(fingerprints.get(m), 512, matdata, matsize, 60)) {
                             //tvFpStatu.setText(String.format("Match OK"));
                             name = storedFingerPrints.get(i).getEmployeeName();
                             phone_number = storedFingerPrints.get(i).getPhone_number();
@@ -352,7 +352,7 @@ public class HomeFragment extends Fragment {
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void queryResult(){
-        thread = null;
+        //thread = null;
         if (matched){
             tvFpStatu.setText(String.format("Match OK"));
             showSignInDialog(name, phone_number);
@@ -391,12 +391,14 @@ public class HomeFragment extends Fragment {
         //Toast.makeText(requireContext(), String.valueOf(mLocation.getLatitude()) + " | " + String.valueOf(mLocation.getLongitude()), Toast.LENGTH_SHORT).show();
         mSignInDialogHelper.call();
 
+        matched = false;
+
         String message = employeeName + " " + R.string.sign_in_message + " " + dtime + " on " + date;
         try {
             SmsManager smsManager = SmsManager.getDefault();
             smsManager.sendTextMessage(phone_number, null, message, null, null);
         } catch (Exception e){
-            Toast.makeText(requireContext(), e.toString(), Toast.LENGTH_SHORT).show();
+           // Toast.makeText(requireContext(), e.toString(), Toast.LENGTH_SHORT).show();
         }
     }
     private void showSignOutDialog(){

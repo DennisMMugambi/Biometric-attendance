@@ -2273,6 +2273,7 @@ layout fragment_employee
 layout fragment_enroll
 layout fragment_enrollment_details
 layout fragment_home
+layout fragment_student_details
 layout layout_sign_in
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions

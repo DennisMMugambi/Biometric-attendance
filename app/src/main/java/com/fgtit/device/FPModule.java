@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.fgtit.fpcore.FPMatch;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 
@@ -561,8 +562,9 @@ public class FPModule {
         for (int i = 0; i < mc; i++) {
             System.arraycopy(matdat, i * 256, mat, 0, 256);
             for (int j = 0; j < rc; j++) {
-                System.arraycopy(refdata, j * 256, ref, 0, 256);
+                System.arraycopy(refdat, j * 256, ref, 0, 256);
                 if (FPMatch.getInstance().MatchTemplate(ref, mat) >= score) {
+                    Log.d("Fp Module", Arrays.toString(mat));
                     return true;
                 }
             }
